@@ -1,6 +1,6 @@
 <?php
 /**
- * Plugin Name: Jetpack Carousel Enhancements.
+ * Plugin Name: Jetpack Carousel Enhancements
  * Description: Hides the comment form, moves the close icon to the right.
  * Version: 0.1.0
  * Author: Dmitry Mayorov
