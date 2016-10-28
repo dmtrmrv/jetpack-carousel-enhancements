@@ -5,19 +5,24 @@
  * Version: 0.1.0
  * Author: Dmitry Mayorov
  * Author URI: https://dmtrmrv.com
+ *
+ * @package Jetpack Carousel Enhancements
  */
 
- // If this file is called directly, abort.
- if ( ! defined( 'WPINC' ) ) {
-	 die;
- }
+// If this file is called directly, abort.
+if ( ! defined( 'WPINC' ) ) {
+	die;
+}
 
 /**
  * Removes comment form from all attachment pages.
+ *
+ * @param bool        $open    Whether the current post is open for comments.
+ * @param int|WP_Post $post_id The post ID or WP_Post object.
  */
- function jce_remove_attachment_comments( $open, $post_id ) {
+function jce_remove_attachment_comments( $open, $post_id ) {
 	$post = get_post( $post_id );
-	if ( $post->post_type == 'attachment' ) {
+	if ( 'attachment' == $post->post_type ) {
 		return false;
 	}
 	return $open;
