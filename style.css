@@ -1,0 +1,28 @@
+/**
+ * Jetpack Carousel Enhancements.
+ */
+
+/* Move caption to the center */
+.jp-carousel-info h2 {
+	text-align: center !important;
+}
+
+/* Hide the header of a comment form */
+.jp-carousel-left-column-wrapper {
+	display: none !important;
+}
+
+/* Move image metabox to the center. */
+.jp-carousel-image-meta {
+	float: none !important;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/* Move close hint to the right. */
+.jp-carousel-transitions .jp-carousel-close-hint {
+	position: fixed;
+	text-align: right;
+	right: 12px;
+	width: auto;
+}
